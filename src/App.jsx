@@ -1,16 +1,10 @@
-import { useState } from 'react';
-import { MainLayout} from './layouts/MainLayout.jsx'
+import MainLayout from "./layouts/MainLayout";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
-    <>
-      <p className="p-8 text-3xl">hola</p>
-      <MainLayout>
-        <p>Hola</p>
-      </MainLayout>
-    </>
+    <MainLayout title="Cleaner">
+      <p>Hola</p>
+    </MainLayout>
   );
 }
 
