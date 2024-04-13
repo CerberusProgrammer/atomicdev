@@ -1,5 +1,5 @@
-import Drawer from "../components/Drawer";
-import Nav from "../components/Nav";
+import Drawer from "../Drawer";
+import Nav from "../Nav";
 
 export default function MainLayout({ children, title }) {
   const windowWidth = window.innerWidth;
@@ -9,7 +9,7 @@ export default function MainLayout({ children, title }) {
       {windowWidth > 800 ? (
         <>
           <Drawer></Drawer>
-          {children}
+          <div className="px-4 py-8">{children}</div>
         </>
       ) : (
         <>
